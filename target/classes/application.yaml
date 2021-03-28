@@ -1,9 +1,18 @@
+#���ݿ�
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mybatis_plus?userSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: root
+
 mybatis-plus:
+  #������־
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #�߼�ɾ��
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0

@@ -24,4 +24,5 @@ public class User {
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
     private Integer version;
+    private Integer deleted;
 }
